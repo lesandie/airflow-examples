@@ -1,2 +1,3 @@
 airflow-webserver.pid
-logs
+logs/
+standalone_admin_password.txt
