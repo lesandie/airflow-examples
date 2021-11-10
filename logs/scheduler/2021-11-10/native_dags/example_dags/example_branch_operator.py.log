@@ -17117,3 +17117,24 @@
 [2021-11-10 16:06:07,054] {logging_mixin.py:109} INFO - [2021-11-10 16:06:07,054] {dag.py:2389} INFO - Sync 1 DAGs
 [2021-11-10 16:06:07,060] {logging_mixin.py:109} INFO - [2021-11-10 16:06:07,060] {dag.py:2921} INFO - Setting next_dagrun for example_branch_operator to 2021-11-09 00:00:00+00:00
 [2021-11-10 16:06:07,063] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.028 seconds
+[2021-11-10 16:06:38,070] {processor.py:163} INFO - Started process (PID=330035) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:06:38,071] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-11-10 16:06:38,071] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,071] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:06:38,084] {processor.py:632} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:06:38,088] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,088] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:06:38,094] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,094] {dag.py:2921} INFO - Setting next_dagrun for example_branch_operator to 2021-11-09 00:00:00+00:00
+[2021-11-10 16:06:38,098] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.029 seconds
+[2021-11-10 16:07:09,049] {processor.py:163} INFO - Started process (PID=330317) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:09,049] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-11-10 16:07:09,049] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,049] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:09,062] {processor.py:632} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:09,066] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,066] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:09,072] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,072] {dag.py:2921} INFO - Setting next_dagrun for example_branch_operator to 2021-11-09 00:00:00+00:00
+[2021-11-10 16:07:09,075] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.028 seconds
+[2021-11-10 16:07:40,122] {processor.py:163} INFO - Started process (PID=330627) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:40,123] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2021-11-10 16:07:40,123] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,123] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:40,136] {processor.py:632} INFO - DAG(s) dict_keys(['example_branch_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py
+[2021-11-10 16:07:40,140] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,140] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:40,146] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,146] {dag.py:2921} INFO - Setting next_dagrun for example_branch_operator to 2021-11-09 00:00:00+00:00
+[2021-11-10 16:07:40,149] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py took 0.028 seconds

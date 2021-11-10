@@ -12049,3 +12049,24 @@
 [2021-11-10 16:06:07,506] {logging_mixin.py:109} INFO - [2021-11-10 16:06:07,506] {dag.py:2389} INFO - Sync 1 DAGs
 [2021-11-10 16:06:07,512] {logging_mixin.py:109} INFO - [2021-11-10 16:06:07,512] {dag.py:2921} INFO - Setting next_dagrun for example_bash_operator to 2021-11-10T00:00:00+00:00
 [2021-11-10 16:06:07,516] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py took 0.028 seconds
+[2021-11-10 16:06:38,568] {processor.py:163} INFO - Started process (PID=330071) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:06:38,568] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2021-11-10 16:06:38,569] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,569] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:06:38,583] {processor.py:632} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:06:38,587] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,587] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:06:38,593] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,593] {dag.py:2921} INFO - Setting next_dagrun for example_bash_operator to 2021-11-10T00:00:00+00:00
+[2021-11-10 16:06:38,597] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py took 0.030 seconds
+[2021-11-10 16:07:09,608] {processor.py:163} INFO - Started process (PID=330356) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:09,608] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2021-11-10 16:07:09,608] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,608] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:09,621] {processor.py:632} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:09,624] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,624] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:09,630] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,630] {dag.py:2921} INFO - Setting next_dagrun for example_bash_operator to 2021-11-10T00:00:00+00:00
+[2021-11-10 16:07:09,634] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py took 0.027 seconds
+[2021-11-10 16:07:40,612] {processor.py:163} INFO - Started process (PID=330663) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:40,613] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2021-11-10 16:07:40,613] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,613] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:40,627] {processor.py:632} INFO - DAG(s) dict_keys(['example_bash_operator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py
+[2021-11-10 16:07:40,630] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,630] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:40,637] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,636] {dag.py:2921} INFO - Setting next_dagrun for example_bash_operator to 2021-11-10T00:00:00+00:00
+[2021-11-10 16:07:40,640] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py took 0.029 seconds

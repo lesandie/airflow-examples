@@ -17131,3 +17131,24 @@
 [2021-11-10 16:06:06,695] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,695] {dag.py:2389} INFO - Sync 1 DAGs
 [2021-11-10 16:06:06,701] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,701] {dag.py:2921} INFO - Setting next_dagrun for example_skip_dag to 2021-11-09T15:06:06.701095+00:00
 [2021-11-10 16:06:06,704] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.035 seconds
+[2021-11-10 16:06:37,640] {processor.py:163} INFO - Started process (PID=330014) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:06:37,650] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2021-11-10 16:06:37,650] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,650] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:06:37,662] {processor.py:632} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:06:37,666] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,666] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:06:37,671] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,671] {dag.py:2921} INFO - Setting next_dagrun for example_skip_dag to 2021-11-09T15:06:37.671369+00:00
+[2021-11-10 16:06:37,675] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.036 seconds
+[2021-11-10 16:07:07,695] {processor.py:163} INFO - Started process (PID=330295) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:07,696] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2021-11-10 16:07:07,696] {logging_mixin.py:109} INFO - [2021-11-10 16:07:07,696] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:07,708] {processor.py:632} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:07,711] {logging_mixin.py:109} INFO - [2021-11-10 16:07:07,711] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:07,716] {logging_mixin.py:109} INFO - [2021-11-10 16:07:07,716] {dag.py:2921} INFO - Setting next_dagrun for example_skip_dag to 2021-11-09T15:07:07.716767+00:00
+[2021-11-10 16:07:07,720] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.026 seconds
+[2021-11-10 16:07:38,693] {processor.py:163} INFO - Started process (PID=330604) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:38,693] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2021-11-10 16:07:38,693] {logging_mixin.py:109} INFO - [2021-11-10 16:07:38,693] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:38,705] {processor.py:632} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py
+[2021-11-10 16:07:38,709] {logging_mixin.py:109} INFO - [2021-11-10 16:07:38,709] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:38,714] {logging_mixin.py:109} INFO - [2021-11-10 16:07:38,714] {dag.py:2921} INFO - Setting next_dagrun for example_skip_dag to 2021-11-09T15:07:38.714370+00:00
+[2021-11-10 16:07:38,718] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py took 0.026 seconds

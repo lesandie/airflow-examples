@@ -2713,3 +2713,141 @@ File Path                                                                       
 ================================================================================
 [2021-11-10 16:06:21,588] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
 [2021-11-10 16:06:21,588] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:01:21.588106+00:00
+[2021-11-10 16:06:31,614] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:06:31,614] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:01:31.614805+00:00
+[2021-11-10 16:06:41,634] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:06:41,634] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:01:41.634943+00:00
+[2021-11-10 16:06:49,638] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.02s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.03s           2021-11-10T15:06:36
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.02s           2021-11-10T15:06:36
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.16s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.04s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.03s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.15s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.03s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.03s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.14s           2021-11-10T15:06:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.15s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.15s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.14s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.03s           2021-11-10T15:06:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.04s           2021-11-10T15:06:38
+================================================================================
+[2021-11-10 16:06:51,643] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:06:51,643] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:01:51.643339+00:00
+[2021-11-10 16:07:01,670] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:01,670] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:01.670688+00:00
+[2021-11-10 16:07:12,613] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:12,613] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:12.613470+00:00
+[2021-11-10 16:07:19,654] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.02s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.02s           2021-11-10T15:07:06
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.01s           2021-11-10T15:07:06
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.15s           2021-11-10T15:07:08
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.03s           2021-11-10T15:07:07
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.03s           2021-11-10T15:07:07
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.15s           2021-11-10T15:07:08
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.03s           2021-11-10T15:07:08
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.03s           2021-11-10T15:07:08
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.15s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.03s           2021-11-10T15:07:08
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.15s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.14s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.15s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.03s           2021-11-10T15:07:09
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.04s           2021-11-10T15:07:08
+================================================================================
+[2021-11-10 16:07:22,638] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:22,639] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:22.639130+00:00
+[2021-11-10 16:07:32,666] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:32,667] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:32.667114+00:00
+[2021-11-10 16:07:42,677] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:42,677] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:42.677209+00:00
+[2021-11-10 16:07:49,684] {manager.py:774} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.02s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.03s           2021-11-10T15:07:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/plugins/workday.py                                                   0           0  0.03s           2021-11-10T15:07:37
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.15s           2021-11-10T15:07:39
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.03s           2021-11-10T15:07:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.03s           2021-11-10T15:07:38
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl_virtualenv.py                              1           0  0.15s           2021-11-10T15:07:39
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.03s           2021-11-10T15:07:39
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.03s           2021-11-10T15:07:39
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group_decorator.py                                      1           0  0.14s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.04s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.15s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_labels.py                                             1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py                               1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_time_delta_sensor_async.py                                   1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_branch_datetime_operator.py                                  1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.15s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.14s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.03s           2021-11-10T15:07:40
+/home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.04s           2021-11-10T15:07:40
+================================================================================
+[2021-11-10 16:07:52,690] {manager.py:1051} INFO - Finding 'running' jobs without a recent heartbeat
+[2021-11-10 16:07:52,690] {manager.py:1055} INFO - Failing jobs without heartbeat after 2021-11-10 15:02:52.690821+00:00

@@ -17120,3 +17120,24 @@
 [2021-11-10 16:06:06,987] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,987] {dag.py:2389} INFO - Sync 1 DAGs
 [2021-11-10 16:06:06,993] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,993] {dag.py:2921} INFO - Setting next_dagrun for example_task_group to 2021-11-09T15:06:06.992998+00:00
 [2021-11-10 16:06:06,996] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.027 seconds
+[2021-11-10 16:06:38,038] {processor.py:163} INFO - Started process (PID=330031) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:06:38,039] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2021-11-10 16:06:38,039] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,039] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:06:38,052] {processor.py:632} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:06:38,055] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,055] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:06:38,061] {logging_mixin.py:109} INFO - [2021-11-10 16:06:38,061] {dag.py:2921} INFO - Setting next_dagrun for example_task_group to 2021-11-09T15:06:38.061476+00:00
+[2021-11-10 16:06:38,065] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.027 seconds
+[2021-11-10 16:07:08,982] {processor.py:163} INFO - Started process (PID=330313) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:08,983] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2021-11-10 16:07:08,983] {logging_mixin.py:109} INFO - [2021-11-10 16:07:08,983] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:08,995] {processor.py:632} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:08,999] {logging_mixin.py:109} INFO - [2021-11-10 16:07:08,999] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:09,005] {logging_mixin.py:109} INFO - [2021-11-10 16:07:09,005] {dag.py:2921} INFO - Setting next_dagrun for example_task_group to 2021-11-09T15:07:09.004992+00:00
+[2021-11-10 16:07:09,008] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.027 seconds
+[2021-11-10 16:07:40,090] {processor.py:163} INFO - Started process (PID=330623) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:40,091] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py for tasks to queue
+[2021-11-10 16:07:40,091] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,091] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:40,104] {processor.py:632} INFO - DAG(s) dict_keys(['example_task_group']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py
+[2021-11-10 16:07:40,107] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,107] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:40,113] {logging_mixin.py:109} INFO - [2021-11-10 16:07:40,113] {dag.py:2921} INFO - Setting next_dagrun for example_task_group to 2021-11-09T15:07:40.113509+00:00
+[2021-11-10 16:07:40,117] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py took 0.027 seconds

@@ -17130,3 +17130,24 @@
 [2021-11-10 16:06:06,789] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,789] {dag.py:2389} INFO - Sync 1 DAGs
 [2021-11-10 16:06:06,823] {logging_mixin.py:109} INFO - [2021-11-10 16:06:06,823] {dag.py:2921} INFO - Setting next_dagrun for example_dag_decorator to None
 [2021-11-10 16:06:06,827] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.159 seconds
+[2021-11-10 16:06:37,639] {processor.py:163} INFO - Started process (PID=330013) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:06:37,650] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-11-10 16:06:37,650] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,650] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:06:37,663] {processor.py:632} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:06:37,778] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,778] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:06:37,783] {logging_mixin.py:109} INFO - [2021-11-10 16:06:37,783] {dag.py:2921} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-11-10 16:06:37,787] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.150 seconds
+[2021-11-10 16:07:08,730] {processor.py:163} INFO - Started process (PID=330299) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:08,731] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-11-10 16:07:08,731] {logging_mixin.py:109} INFO - [2021-11-10 16:07:08,731] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:08,745] {processor.py:632} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:08,864] {logging_mixin.py:109} INFO - [2021-11-10 16:07:08,864] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:08,870] {logging_mixin.py:109} INFO - [2021-11-10 16:07:08,869] {dag.py:2921} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-11-10 16:07:08,874] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.145 seconds
+[2021-11-10 16:07:39,727] {processor.py:163} INFO - Started process (PID=330608) to work on /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:39,727] {processor.py:620} INFO - Processing file /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-11-10 16:07:39,727] {logging_mixin.py:109} INFO - [2021-11-10 16:07:39,727] {dagbag.py:500} INFO - Filling up the DagBag from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:39,742] {processor.py:632} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-11-10 16:07:39,862] {logging_mixin.py:109} INFO - [2021-11-10 16:07:39,862] {dag.py:2389} INFO - Sync 1 DAGs
+[2021-11-10 16:07:39,867] {logging_mixin.py:109} INFO - [2021-11-10 16:07:39,867] {dag.py:2921} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-11-10 16:07:39,872] {processor.py:171} INFO - Processing /home/dnieto/.pyenv/versions/3.8.11/envs/airflow/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.146 seconds
