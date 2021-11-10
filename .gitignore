@@ -1,2 +1,2 @@
-webserver.pid
-logs/*
+airflow-webserver.pid
+logs
