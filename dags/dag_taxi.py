@@ -4,11 +4,7 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 from pprint import pprint
 import logging
-import sys
 import os
-import csv
-import time
-import argparse
 import psycopg2
 
 
@@ -26,7 +22,7 @@ with DAG(
         print(ds)
         return 'Whatever you return gets printed in the logs'
 
-    run_this = PythonOperator(
+    print_context = PythonOperator(
         task_id='print_the_context',
         python_callable=print_context,
     )
@@ -81,8 +77,13 @@ with DAG(
             cursor.close()
             print("PostgreSQL connection closed")
 
-    run_this = PythonOperator(
+    load_data = PythonOperator(
         task_id='load_the_csv',
         python_callable=load_csv,
     )
+
+    ## rUN TASKS
+
+    print_context >> load_data
+
     # [END print_operator_python]
