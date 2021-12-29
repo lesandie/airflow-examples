@@ -82,7 +82,7 @@ with DAG(
         python_callable=load_csv,
     )
 
-    ## rUN TASKS
+    ## RUN TASKS
 
     print_context >> load_data
 
