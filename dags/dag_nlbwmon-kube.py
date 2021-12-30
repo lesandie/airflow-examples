@@ -1,7 +1,7 @@
-from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
+from datetime import datetime, timedelta
 from typing import Union, Tuple
 import os
 import psycopg2
@@ -29,12 +29,17 @@ with DAG(
     def add_date_column(pathdir: str) -> None:
         """
         Modifies every csv to add a datetime column, using the namefile
+        reads the csv from 'pathdir/orig' and 
+        writes the modded csv to 'pathdir/mod'
         """
-        csv_files = get_csv_list(pathdir)    
-        for csv in csv_files:    
-            name, _ = csv.split('.')
-            with open(csv, 'r') as read_obj, \
-            open(f'{pathdir}/{name}_mod.csv', 'w', newline='') as write_obj:
+        path_orig = f'{pathdir}/orig'
+        path_mod = f'{pathdir}/mod'
+        csv_list = get_csv_list(path_orig)
+        print(csv_list)
+        for csv_file in csv_list:
+            name, _ = csv_file.split('.')
+            with open(f'{path_orig}/{csv_file}', mode="r", encoding="utf-8", newline="\n") as read_obj, \
+            open(f'{path_mod}/{csv_file}', mode="w", encoding="utf-8", newline="\n") as write_obj:
                 # Create a csv.reader object from the input file object
                 csv_reader = csv.reader(read_obj)
                 # Create a csv.writer object from the output file object
@@ -42,9 +47,10 @@ with DAG(
                 # Read each row of the input csv file as list
                 for row in csv_reader:
                 # Append the default text in the row / list
-                    row.append(csv)
+                    row.append(name)
                 # Add the updated row / list to the output file
-                    csv_writer.writerow(name)
+                    csv_writer.writerow(row)
+
 
     add_column = PythonOperator(
         task_id='add_column_to_csv',
@@ -53,7 +59,6 @@ with DAG(
     )
 
     # [END add_column]
-
 
     # [START load_csv]
     def connect_postgres(params: dict) -> Tuple[psycopg2.extensions.connection, psycopg2.extensions.cursor]:
@@ -74,7 +79,7 @@ with DAG(
 
     def load_csv(pathdir: str) -> None:
         """
-            Load a CSV file into postgres
+            Load CSVs file into postgres from 'pathdir'
         """
         try:
             params = {
@@ -85,30 +90,32 @@ with DAG(
                 'port': '5432'
             }
             conn, cursor = connect_postgres(params)
-            
+
             csv_mod_files = get_csv_list(pathdir)
-            for csv in csv_mod_files:
-                with open(csv, 'r') as rfile:
-                    cursor.copy_expert("COPY nlbwmon FROM STDIN WITH DELIMITER AS ',' CSV HEADER;", rfile)
+            for csv_file in csv_mod_files:
+                with open(f'{pathdir}/{csv_file}', mode="r", encoding="utf-8", newline="\n") as rfile:
+                    cursor.copy_expert("COPY nlbwmon (family,proto,port,mac,ip,conns,rx_bytes,rx_pkts,tx_bytes,tx_pkts,layer7,month) \
+                                        FROM STDIN WITH DELIMITER AS ',' CSV HEADER;", rfile
+                    )
                     # Important to commit the COPY or any other UPSERT/DELETE
                     conn.commit()
 
             # Close the cursor
             cursor.close()
             print("PostgreSQL connection closed")
-        
+
         except(Exception) as error:
             print(error)
+
 
     load_data = PythonOperator(
         task_id='load_data_into_table',
         python_callable=load_csv,
-        op_args=['/home/dnieto/pruebas/nlbwmon']
+        op_args=['/home/dnieto/pruebas/nlbwmon/mod']
     )
 
     # [END load_data]
 
-    
     # RUN TASKS
     # task1 >> task2 >> task3 ...
     add_column >> load_data
