@@ -92,6 +92,7 @@ with DAG(
             conn, cursor = connect_postgres(params)
 
             csv_mod_files = get_csv_list(pathdir)
+            print(csv_mod_files)
             for csv_file in csv_mod_files:
                 with open(f'{pathdir}/{csv_file}', mode="r", encoding="utf-8", newline="\n") as rfile:
                     cursor.copy_expert("COPY nlbwmon (family,proto,port,mac,ip,conns,rx_bytes,rx_pkts,tx_bytes,tx_pkts,layer7,month) \
