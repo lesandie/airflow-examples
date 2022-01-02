@@ -111,6 +111,7 @@ with DAG(
 
     load_data = PythonOperator(
         task_id='load_data_into_table',
+        depends_on_past=True,
         python_callable=load_csv,
         op_args=['/home/dnieto/pruebas/nlbwmon/mod']
     )
