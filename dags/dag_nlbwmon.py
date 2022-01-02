@@ -10,7 +10,8 @@ import csv
 with DAG(
     dag_id='nlbwmon_load_data',
     #schedule_interval=timedelta(minutes=5),
-    start_date=datetime(2021, 12, 25),
+    schedule_interval=None,
+    start_date=datetime(2022, 1, 1),
     catchup=False,
     tags=['nlbwmon'],
 ) as dag:
@@ -120,4 +121,5 @@ with DAG(
 
     # RUN TASKS
     # task1 >> task2 >> task3 ...
+    # task1 >> [task2, task3] ...
     add_column >> load_data
