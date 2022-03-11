@@ -1,28 +1,27 @@
-from datetime import datetime, timedelta
-from xmlrpc.client import Boolean
+from datetime import datetime
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator, ShortCircuitOperator
 
-current_execution_date = "{{ data_interval_start }}"
-next_execution_date = "{{ data_interval_end }}"
+# ts "2022-03-11T00:00:00+00:00"
+# ds "2022-03-11"
+ds = "{{ ds }}"
 
-def check_weekday(**kwargs) -> bool:
+def check_weekday(timestamp: str) -> bool:
     """
     Checks if the next execution date is a weekday
     """
-    # Check templating vars from airflow
-    current_execution_date = kwargs['data_interval_start']
-    next_execution_date = kwargs['data_interval_end']
-    print(f"Current execution is {current_execution_date}")
-    print(f"Next execution is: {next_execution_date}")
-    date_check = next_execution_date.weekday()
-    # 0 Monday, 1 Tuesday ...
-    week_day = { 0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday" }
-    print(f": Next execution is scheduled on {week_day[date_check]}")
-    if date_check in (0,1,2,3,4):
+    ds = datetime.fromisoformat(timestamp)
+    print(ds)
+    date_check = ds.weekday()
+    week_day = { 0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday" }
+    #if date_check in (0,1,2,3,4):
+    if date_check in (5,6):
+        print(f": Executing on {week_day[date_check]}")
         return True
     else:
-        return False
+        print(f": Not executing on {week_day[date_check]}")
+        return False 
+
 
 def log_output(message):
     print(f"{message}")
@@ -60,6 +59,7 @@ with DAG(**dag_args) as dag:
     weekdays_only = ShortCircuitOperator(
         task_id='weekdays_only',
         python_callable=check_weekday,
+        op_args=[ds],
     )
 
     start_dummy >> weekdays_only >> end_dummy
