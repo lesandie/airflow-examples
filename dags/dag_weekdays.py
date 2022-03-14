@@ -1,4 +1,5 @@
-from datetime import datetime
+import datetime
+#Best if used from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator, ShortCircuitOperator
 
@@ -10,7 +11,7 @@ def check_weekday(timestamp: str) -> bool:
     """
     Checks if the next execution date is a weekday
     """
-    ds = datetime.fromisoformat(timestamp)
+    ds = datetime.datetime.fromisoformat(timestamp)
     print(ds)
     date_check = ds.weekday()
     week_day = { 0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday" }
@@ -28,9 +29,9 @@ def log_output(message):
 
 # DAG parameters
 default_args = {
-    "start_date": datetime(2022, 3, 7),
+    "start_date": datetime.datetime(2022, 3, 7),
     "retries": 3,
-    "retry_delay": 180,
+    "retry_delay": datetime.timedelta(minutes=1),
     "mode": "reschedule",
 }
 
