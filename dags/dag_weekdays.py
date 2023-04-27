@@ -29,7 +29,7 @@ def log_output(message):
 
 # DAG parameters
 default_args = {
-    "start_date": datetime.datetime(2022, 3, 7),
+    "start_date": datetime.datetime(2022, 3, 17),
     "retries": 3,
     "retry_delay": datetime.timedelta(minutes=1),
     "mode": "reschedule",
@@ -39,7 +39,7 @@ dag_args = dict(
     dag_id="week_days",
     default_args=default_args,
     description="Week days pipeline",
-    schedule_interval="@daily",
+    schedule_interval="0 0 * * 1-5",
     #schedule_interval=timedelta(minutes=2)
 )
 

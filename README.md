@@ -6,6 +6,10 @@
 
 * nlbwmon: Basic DAG that adds a datetime column into a list os CSVs, and loads each CSV data into a table. WIP: This will be upgraded to use Kubernetes Executor.
 
+## Infra
+
+Needs postgresl and redis dockers
+
 ## Usage
 
 Simply copy the DAG files into the DAGs folder in your Airflow installation
@@ -14,6 +18,6 @@ Simply copy the DAG files into the DAGs folder in your Airflow installation
 
 ```bash
 $ pyenv activate airflow (3.8.11 venv)
-$ airflow standalone
+$ python -m airflow standalone
 
 ```
